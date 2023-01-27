@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Minesweeper</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1 id="pageTitle">Minesweeper</h1>
+    <h3 id="gameStatus"></h3>
+
+    <p class="center">
+      <button id="beginner" data-checked="1">Beginner</button>
+      <button id="intermediate">Intermediate</button>
+      <button id="expert">Expert</button>
+    </p>
+
+    <div class="div1" style="text-align: center">
+      <strong>Board Size: <span id="boardSize"></span></strong>
+      <br />
+      <strong>Plums Left: <span id="flagCount"></span>?</strong>
+      <br />
+      <strong>Total Plums: <span id="totalPlums"></span></strong>
+      <br />
+      <strong>Time: <span id="time">0</span></strong>
+    </div>
+
+    <table id="table"></table>
+
+    <form method="post" id="reset">
+      <p>
+        <input type="button" value="RESET" id="button" />
+      </p>
+    </form>
+
+    <div class="leaderboards">
+      <div class="leaderboard">
+        <span class="leaderboard-title"></span>
+        <span id="beginnerHS">0</span>
+      </div>
+      <div class="leaderboard">
+        <span class="leaderboard-title"></span>
+        <span id="intermediateHS">0</span>
+      </div>
+      <div class="leaderboard">
+        <span class="leaderboard-title"></span>
+        <span id="expertHS">0</span>
+      </div>
+    </div>
+  </body>
+</html>
