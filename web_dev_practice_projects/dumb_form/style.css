@@ -1,0 +1,32 @@
+/*
+colour and background
+color and properties
+rgb
+name colors
+hexdecimal colors
+text proetries
+fontsize
+font family
+universal and elelment selcteors
+id selectors
+class selectors
+descendant selectors
+decosendant combinators
+*/
+
+
+* {
+    background-color:silver;
+    color:rgb(83, 40, 40);
+    font-family:monospace;
+}
+
+input {
+    background-color: white;
+}
+
+div:nth-of-type(1) label {
+    color:tomato;
+    font-weight: 700;
+}
+

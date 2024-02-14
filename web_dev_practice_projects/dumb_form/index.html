@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/S3-html-the-essentials/">
+        <div>
+            <label for="first"> First Name</label>
+            <input type="text" id="first" name="first" required>
+            <label for="last"> Last Name</label>
+            <input type="text" id="last" name="last" required>
+            <!--added "name" for when form is submitted-->
+        </div>
+        <!--added div, made no diff but good practice-->
+        <p>Select a Race:</p>
+        <div>
+            <!--i can use 'input:radio' shortcut-->
+            <input type="radio" id="fun" name="race" value="fun">
+            <label for="fun">Fun Run 5k</label>
+            <!--added value attribute-->
+        </div>
+        <div>
+            <input type="radio" id="half" name="race" value="half">
+            <label for="half">Half Marathon</label>
+            <!--added value attribute-->
+        </div>
+        <div>
+            <input type="radio" id="full" name="race" value="full">
+            <label for="full">Full Marathon</label>
+            <!--added value attribute-->
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <!--input:email-->
+            <!--added name attribute-->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <!--input:password-->
+            <!--added name attribute-->
+        </div>
+
+
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="under" selected>under 18</option>
+                <option value="young" selected>18-30</option>
+                <option value="old" selected>30-50</option>
+                <option value="oldest" selected>50+</option>
+            </select>
+            <button>Register!</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
